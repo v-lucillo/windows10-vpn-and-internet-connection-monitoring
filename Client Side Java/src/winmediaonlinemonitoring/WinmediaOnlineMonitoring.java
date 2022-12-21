@@ -46,7 +46,7 @@ public class WinmediaOnlineMonitoring {
                     String line;
                     StringBuilder responseContent = new StringBuilder();
                     adapters = URLEncoder.encode(adapters, "UTF-8");
-                    URL url = new URL("http://wmcm.mbcradio.net:443/api/connection?call_sign=" + call_sign + "&timestamp=" + timestamp + "&adapters=" + adapters);
+                    URL url = new URL("https://domain.com/api/connection?call_sign=" + call_sign + "&timestamp=" + timestamp + "&adapters=" + adapters);
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestProperty("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8");
                     connection.setRequestMethod("GET");
